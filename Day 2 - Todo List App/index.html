@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>    
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-800 to-blue-800">
+    <div class="w-full min-h-[100vh] p-[10px]">
+        <div class="w-full max-w-[600px] bg-[#fff] mt-32 mx-auto mb-2 pt-8 px-6 pb-10 rounded-xl">
+            <h2 class="flex text-2xl font-semibold text-[#002765] align-middle mb-[20px]">To-Do List 
+                <img src="img/icon.png" class="w-[30px] ml-4">
+            </h2>
+            <div class="flex align-middle justify-between bg-[#edeef0] rounded-[30px] pl-[20px] mb-[25px]">
+                <input id="input-box" class="flex-1 border-none outline-none bg-transparent p-3" type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()" class="border-none outline-none py-[16px] px-[50px] bg-[#ff5945] text-[#fff] text-[16px] rounded-[40px] cursor-pointer">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">List Item</li>
+                <li>List Item</li>
+                <li>List Item</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
