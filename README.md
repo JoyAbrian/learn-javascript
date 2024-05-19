@@ -1,3 +1,3 @@
 # learn-javascript
 
-[tutor dri sini ^-^](https://www.udemy.com/course/javascriptfundamentals/learn/lecture/3220428?start=135#overview)
+[tutor dri sini ^-^](https://www.youtube.com/watch?v=Pyv0tMm5i_w&ab_channel=GreatStack)
