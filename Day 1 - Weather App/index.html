@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App JS</title>
+    <link rel="icon" href="img/weatherapp-icon.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>    
+</head>
+
+<body class="bg-gray-900 flex items-center justify-center">
+    <div
+        class="w-11/12 max-w-[470px] bg-gradient-to-br from-teal-400 to-indigo-600 text-white mx-auto mt-24 rounded-2xl p-10 text-center">
+        <div class="flex items-center justify-center space-x-4">
+            <input
+                id="search-box"
+                class="border-none outline-none bg-[#ebfffc] text-[#555] px-4 py-2 h-[60px] rounded-[30px] w-full max-w-[400px] text-[18px]"
+                type="text" placeholder="Enter city name" spellcheck="false">
+            <button
+                id="search-btn"
+                class="border-none outline-none bg-[#ebfffc] rounded-full w-[60px] h-[60px] cursor-pointer flex items-center justify-center">
+                <img class="w-[16px]" src="img/search.png" alt="search">
+            </button>
+        </div>
+        <p id="error" class="text-[14px] text-red-500">Please enter a valid city name</p>
+
+        <div id="weather">
+            <img id="weather-icon" class="w-56 mt-[30px] mx-auto " src="img/rain.png" alt="weather-icon">
+            <h1 id="temp" class="text-[80px] font-medium">20°C</h1>
+            <h2 id="city" class="text-[45px] font-normal mt-[-10px]">Indonesia</h2>
+            <div class="flex align-middle justify-between px-0 py-3 mt-8 ">
+                <div class="flex align-middle my-auto text-left">
+                    <img class="w-11 h-11 mr-[10px]" src="img/humidity.png" alt="humidity">
+                    <div>
+                        <p id="humidity" class="text-2xl mt-[-6px]">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="flex align-middle my-auto text-left">
+                    <img class="w-11 h-11 mr-[10px]" src="img/wind.png" alt="humidity">
+                    <div>
+                        <p id="speed" class="text-2xl mt-[-6px]">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>  
+</html>
