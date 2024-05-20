@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="icon" href="favicon.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Playfair Display', serif;
+            border-top: 1px solid transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#bbc6fa] flex justify-center items-center h-screen">
+    <div  class="bg-[#fff] w-[700px] p-[40px] rounded-[10px] text-center shadow-md shadow-slate-700">
+        <h2 class="text-[32px] relative font-extrabold mb-[40px] after:content-[''] after:w-[75px] after:h-[3px] after:bg-[rgb(23, 124, 229)] after:absolute after:bottom-[-10px] after:left-[50%] after:-translate-x-1/2">Quote Of The Day</h2>
+        <blockquote id="quote" class="text-[26px] min-h-[110px] before:content-none after:content-none">Loading...</blockquote>
+        <span id="author" class="block mt-[10px] float-right relative">Loading...</span>
+        <button onclick="getQuote(api_url)" class="mt-3 bg-blue-500 py-3 px-8 rounded-2xl text-white text-xl font-normal">New Quote</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
