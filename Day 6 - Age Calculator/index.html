@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid transparent;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#4203a9] to-[#90bafc]">
+    <div class="w-[100%] min-h-[100vh] text-[#fff] p-[10px]">
+        <div class="w-[100%] max-w-[600px] ml-[10%] mt-[10%]">
+            <h1 class="text-[60px] font-bold">JavaScript <br><span class="text-[#ffff76]"> Age Calculator</span></h1>
+            <div class="mx-[40px] p-[35px] rounded-[10px] bg-[rgba(255,255,255,0.3)] flex align-middle">
+                <input class="flex-1 mr-[20px] px-[14px] py-[20px] border-none outline-none text-[18px] rounded-[5px] text-black relative" type="date" id="date">
+                <button onclick="calculateAge()" class="bg-[#ffff76] border-none outline-none px-[15px] py-[30px] rounded-[5px] font-bold text-[#333] cursor-pointer">Calculate</button>
+            </div>
+            <p id="result" class="text-xl mt-5"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
