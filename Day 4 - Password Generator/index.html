@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="img/favicon.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#002339] text-[#fff]">
+    <div class="m-[12%] w-[90%] max-w-[700px] ">
+        <h1 class="font-bold text-4xl">Generate a <br><span class="text-[#019f55] border-b-4 border-solid border-[#019f55] pb-[7px]">Random Password</span></h1>
+        <div class="w-[100%] mt-[50px] mb-[30px] bg-[#fff] text-[#333] flex align-middle justify-between px-[26px] py-[20px] rounded-lg">
+            <input class="border-none outline-none text-[24px] " type="text" id="password" placeholder="Password">
+            <img onclick="copyPassword()" class="w-[30px] cursor-pointer" src="img/copy.png" alt="copy">
+        </div>
+        <button onclick="createPassword()" class="border-none outline-none bg-[#019f55] text-[#fff] text-[22px] font-thin flex align-middle justify-center py-[16px] px-[26px] cursor-pointer"><img class="w-[28px] mr-[10px]" src="img/generate.png" alt="generate">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
