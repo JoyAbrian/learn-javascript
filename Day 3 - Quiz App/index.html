@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App JS</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid transparent;
+        }
+    </style>    
+</head>
+<body class="bg-[#001e4d]">
+    <div class="bg-[#fff] w-[90%] max-w-[600px] mt-[100px] mx-auto p-[30px] rounded-xl">
+        <h1 class="text-2xl text-slate-800 font-extrabold border-b-slate-800 border-b-2 pb-5">Simple Quiz</h1>
+        <div class="py-8">
+            <h2 id="question" class="text-xl font-semibold text-slate-700">Question goes here</h2>
+            <div id="answer-buttons">
+                <!-- <button id="btn" class="btn">Answer 1</button>
+                <button id="btn" class="btn">Answer 2</button>
+                <button id="btn" class="btn">Answer 3</button>
+                <button id="btn" class="btn">Answer 4</button> -->
+            </div>
+            <button id="next-btn" class="cursor-pointer rounded-lg mt-5 mx-auto block bg-[#001e4d] text-[#fff] font-medium border-none p-3 w-36">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.btn {
+    transition: all 150ms;
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    margin-top: 1rem; /* 4 * 0.25rem = 1rem */
+    padding-top: 1rem; /* 4 * 0.25rem = 1rem */
+    padding-bottom: 1rem; /* 4 * 0.25rem = 1rem */
+    text-align: left;
+    border-radius: 0.5rem; /* 4 * 0.125rem = 0.5rem */
+    padding-left: 1rem; /* 4 * 0.25rem = 1rem */
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+.incorrect {
+    background: #ff9393;
+}
