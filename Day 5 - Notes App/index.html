@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App JS</title>
+    <link rel="icon" href="img/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-[100%] min-h-[100vh] bg-gradient-to-br from-[#cf9aff] to-[#95c0ff] text-[#fff] pt-[4%] pl-[10%] ">
+        <h1 class="flex align-middle text-[35px] font-bold"><img class="w-[60px]" src="img/notes.png"> Notes</h1>
+        <button id="btn" class="flex align-middle bg-gradient-to-b from-[#9418fd] to-[#571094] text-[#fff] text-[16px] outline-none border-none rounded-[40px] py-[15px] px-[25px] ml-[30px] mr-0 my-[20px] cursor-pointer"><img class="w-[25px] mr-[8px]" src="img/edit.png">Create Notes</button>
+        <div id="notes-container">
+            <!-- <p contenteditable="true" class="input-box">
+                <img src="img/delete.png">
+            </p> -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
