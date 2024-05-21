@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="icon" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#262a2f] flex justify-center items-center h-screen">
+    <div  class="bg-[#fff] w-[700px] p-[40px] rounded-[10px] shadow-md shadow-slate-700">
+        <p class="font-bold text-[15px] mb-[8px]">Enter Text or URL</p>
+        <input id="qrText" class="w-[100%] h-[50px] border-[1px] border-solid border-[#494eea] outline-none p-[10px] mt-[10px] mb-[20px] rounded-[5px]" type="text" placeholder="Text Or URL">
+        
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+        
+        <button onclick="generateQR()" class="w-[100%] h-[50px] bg-[#494eea] text-[#fff] border-none outline-none rounded-[5px] shadow-xl cursor-pointer my-[20px] font-bold">Generate QR Code</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
