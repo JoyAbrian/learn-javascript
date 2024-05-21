@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#f7edff]">
+    <div class="m-[50px]">
+        <button onclick="showToast(successMsg)" class="bg-[#333] text-[#fff] border-none outline-none w-[120px] h-[40px] m-[5px] cursor-pointer">Success</button>
+        <button onclick="showToast(errorMsg)" class="bg-[#333] text-[#fff] border-none outline-none w-[120px] h-[40px] m-[5px] cursor-pointer">Error</button>
+        <button onclick="showToast(invalidMsg)" class="bg-[#333] text-[#fff] border-none outline-none w-[120px] h-[40px] m-[5px] cursor-pointer">Invalid</button>
+    </div>
+
+    <div id="toast-box" class="absolute bottom-[30px] right-[30px] flex align-bottom flex-col overflow-hidden p-[20px]">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
